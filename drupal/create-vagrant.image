@@ -1,0 +1,22 @@
+Install Ubuntu 2410 with ubuntu-24.10-live-server-amd64.iso on virtualbox
+Name of virtualbox VM: Ubuntu-2410
+
+
+add ssh Server
+
+user vagrant
+password vagrant
+
+change with visudo at end of file
+ALL ALL=(ALL) NOPASSWD: ALL
+
+create id_ed25519 on master for ansible with
+ssh-keygen -t ed25519 -b 4096
+
+add id_ed25519.pub to .ssh/authorized_keys on 
+
+# vagrant package --base Ubuntu-2410 --output ubuntu2410.box
+
+vagrant box add Ubuntu-2410 ubuntu2410.box
+
+vagrant up
