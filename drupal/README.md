@@ -2,6 +2,8 @@
 
 **For a fully-featured VM environment for Drupal, please check out [Drupal VM](https://www.drupalvm.com/).**
 
+**For .ssh/id_ed25519 and problems with php8.3 and old php8.2 repo, new community.mysql an problems with /var/www folder under ubuntu 2004 use ubuntu 2410 with create-vagrant.image.**
+
 This project makes local Drupal test/development environment management quick and easy. It installs the following on an Ubuntu VM:
 
   - Apache
